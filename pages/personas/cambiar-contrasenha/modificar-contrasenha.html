@@ -1,0 +1,45 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Modificar Contraseña</div>
+    <div class="panel-body">
+        <form ng-submit="add()" class="form-horizontal">
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Codigo:</label>
+                <div class="col-sm-3">
+                    <input  disabled  type="text" class="form-control input-sm" ng-model="datos.codigo" maxlength="5"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Usuario:</label>
+                <div class="col-sm-3">
+                    <input  disabled  required type="text" class="form-control input-sm" ng-model="datos.usuario" maxlength="50"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Contraseña Nueva:</label>
+                <div class="col-sm-3">
+                    <input  required type="text" class="form-control input-sm" ng-model="datos.contrasenha" maxlength="50"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Confirmar Nueva Contraseña:</label>
+                <div class="col-sm-3">
+                    <input  required type="text" class="form-control input-sm" ng-model="datos.nuevaContrasenha" maxlength="50"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-5 col-sm-10">
+                    <!--|| !datos.descripcion || !datos.dominio-->
+                    <input ng-disabled=" !datos.contrasenha || !datos.nuevaContrasenha" type="button" ng-click="modificar()"  class="btn btn-primary btn-sm" value="Modificar" />
+
+                    <input type="button" ng-click="cancelar()"  class="btn btn-danger btn-sm" value="Cancelar" />
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
