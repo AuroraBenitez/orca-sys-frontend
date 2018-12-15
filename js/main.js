@@ -7,6 +7,7 @@
  */
 
 $('.toggle').click(function(){
+    /*-- llamamos a la clase toggle, cuando se haga click realizar lo siguiente--*/
     $('.formulario').animate({
         height: "toggle",
         'padding-top': 'toggle',

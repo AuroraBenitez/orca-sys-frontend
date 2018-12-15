@@ -534,8 +534,8 @@ app.service('DominiosService', function($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.listarJson = function(json) {
-        //var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/dominios/{"codigo":"PAISES"}')
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/dominios/'+json)
+        //var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/dominios/{"codigo":"PAISES"}')
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/dominios/'+json)
             .then(function (response) {
                 return response;
             });
@@ -543,7 +543,7 @@ app.service('DominiosService', function($http) {
     }
 
     this.listar = function() {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/dominios')
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/dominios')
             .then(function (response) {
                 return response;
             });
@@ -551,7 +551,7 @@ app.service('DominiosService', function($http) {
     }
 
     this.eliminar = function(id){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/dominios/delete/'+id)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/dominios/delete/'+id)
             .then(function (response) {
                 return response;
             });
@@ -559,7 +559,7 @@ app.service('DominiosService', function($http) {
     }
 
     this.insertar = function(codigo, descripcion){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/dominios/insert/'+codigo+'/'+descripcion)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/dominios/insert/'+codigo+'/'+descripcion)
             .then(function (response) {
                 return response;
             });
@@ -571,7 +571,7 @@ app.service('AccesosService', function($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.login = function(usuario, pass) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuarios/accesos/'+usuario+'/'+pass)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/accesos/'+usuario+'/'+pass)
             .then(function (response) {
                 return response;
             });
@@ -579,7 +579,7 @@ app.service('AccesosService', function($http) {
     }
 
     this.listarComplex = function(json) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/personas/complex/'+json)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/personas/complex/'+json)
             .then(function (response) {
                 return response;
             });
@@ -591,7 +591,7 @@ app.service('ValoresService', function($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.listarJson = function(json) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/valores/'+json)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/valores/'+json)
             .then(function (response) {
                 return response;
             });
@@ -599,7 +599,7 @@ app.service('ValoresService', function($http) {
     }
 
     this.listar = function() {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/valores')
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/valores')
             .then(function (response) {
                 return response;
             });
@@ -607,7 +607,7 @@ app.service('ValoresService', function($http) {
     }
 
     this.eliminar = function(id){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/valores/delete/'+id)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/valores/delete/'+id)
             .then(function (response) {
                 return response;
             });
@@ -615,7 +615,7 @@ app.service('ValoresService', function($http) {
     }
 
     this.insertar = function(dominio, valor){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/valores/insert/'+dominio+'/'+valor)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/valores/insert/'+dominio+'/'+valor)
             .then(function (response) {
                 return response;
             });
@@ -1790,8 +1790,8 @@ app.service('ArticulosService', function($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.listarJson = function(json) {
-        //var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/dominios/{"codigo":"PAISES"}')
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/articulos/'+json)
+        //var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/dominios/{"codigo":"PAISES"}')
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/articulos/'+json)
             .then(function (response) {
                 return response;
             });
@@ -1799,7 +1799,7 @@ app.service('ArticulosService', function($http) {
     }
 
     this.listar = function() {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/articulos')
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/articulos')
             .then(function (response) {
                 return response;
             });
@@ -1807,7 +1807,7 @@ app.service('ArticulosService', function($http) {
     }
 
     this.eliminar = function(id){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/articulos/delete/'+id)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/articulos/delete/'+id)
             .then(function (response) {
                 return response;
             });
@@ -1829,7 +1829,7 @@ app.service('ArticulosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/articulos/insert?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/articulos/insert?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -1849,7 +1849,7 @@ app.service('ArticulosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/catalogo/articulos/modificar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/catalogo/articulos/modificar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2121,7 +2121,7 @@ app.service('ServiciosService', function($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.secuencia = function() {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/secuencia')
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/secuencia')
             .then(function (response) {
                 return response;
             });
@@ -2129,7 +2129,7 @@ app.service('ServiciosService', function($http) {
     }
 
     this.listarJson = function(json) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/'+json)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/'+json)
             .then(function (response) {
                 return response;
             });
@@ -2137,7 +2137,7 @@ app.service('ServiciosService', function($http) {
     }
 
     this.eliminar = function(id){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/delete/'+id)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/delete/'+id)
             .then(function (response) {
                 return response;
             });
@@ -2145,7 +2145,7 @@ app.service('ServiciosService', function($http) {
     }
 
     this.eliminarServicioById = function(codigo){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/eliminar-id/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/eliminar-id/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -2154,7 +2154,7 @@ app.service('ServiciosService', function($http) {
 
 
     this.insertar = function(codigo, descripcion){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/insert/'+codigo+'/'+descripcion)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/insert/'+codigo+'/'+descripcion)
             .then(function (response) {
                 return response;
             });
@@ -2184,7 +2184,7 @@ app.service('ServiciosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/servicios/ingresar-equipo?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/servicios/ingresar-equipo?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2210,7 +2210,7 @@ app.service('ServiciosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.put('http://localhost:8080/panda-sys/webapi/servicios/ingresar-equipo?paramJson='+encoJson)
+        var myResponseData = $http.put('http://localhost:8080/orca-sys/webapi/servicios/ingresar-equipo?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2222,7 +2222,7 @@ app.service('ServiciosService', function($http) {
     this.listarCircuito = function(json) {
         var jsonObj = angular.toJson(json);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/circuito?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/circuito?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2232,7 +2232,7 @@ app.service('ServiciosService', function($http) {
     this.listarCotizacion = function(json) {
         var jsonObj = angular.toJson(json);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/cotizacion?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/cotizacion?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2242,7 +2242,7 @@ app.service('ServiciosService', function($http) {
     this.listarServicio = function(datos) {
         var jsonObj = angular.toJson(datos);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/listar-servicio?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/listar-servicio?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2259,7 +2259,7 @@ app.service('ServiciosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/insertar-servicios?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/insertar-servicios?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2276,7 +2276,7 @@ app.service('ServiciosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/servicios/modificar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/servicios/modificar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2285,7 +2285,7 @@ app.service('ServiciosService', function($http) {
 
 
     this.obtenerCircuitoServicioIngreso = function(secuencia) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/ingreso/'+secuencia)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/ingreso/'+secuencia)
             .then(function (response) {
                 return response;
             });
@@ -2295,7 +2295,7 @@ app.service('ServiciosService', function($http) {
     this.crearCotizacion = function(obj){
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/servicios/crear-cotizacion?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/servicios/crear-cotizacion?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2305,7 +2305,7 @@ app.service('ServiciosService', function($http) {
     this.aprobar = function(obj) {
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/servicios/aprobar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/servicios/aprobar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2315,7 +2315,7 @@ app.service('ServiciosService', function($http) {
     this.reparar = function(obj) {
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/servicios/reparar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/servicios/reparar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2325,7 +2325,7 @@ app.service('ServiciosService', function($http) {
     this.rechazar = function(obj) {
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/servicios/rechazar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/servicios/rechazar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2335,7 +2335,7 @@ app.service('ServiciosService', function($http) {
     this.anular = function(json) {
         var jsonObj = angular.toJson(json);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/servicios/anular-circuito?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/servicios/anular-circuito?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2343,7 +2343,7 @@ app.service('ServiciosService', function($http) {
     }
 
     this.listarCircuitoHistorico = function(secuencia) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/servicios/circuito-historico/'+secuencia)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/servicios/circuito-historico/'+secuencia)
             .then(function (response) {
                 return response;
             });
@@ -2353,7 +2353,7 @@ app.service('ServiciosService', function($http) {
     this.transpasoFacturacion = function(obj) {
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/servicios/transpaso-facturacion?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/servicios/transpaso-facturacion?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2364,7 +2364,7 @@ app.service('ServiciosService', function($http) {
     this.entregar = function(obj) {
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/servicios/entregar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/servicios/entregar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2874,7 +2874,7 @@ app.service('RolesService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/roles?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/roles?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2882,7 +2882,7 @@ app.service('RolesService', function($http) {
     }
 
     this.listarDistinct = function() {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/roles/distinct')
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/roles/distinct')
             .then(function (response) {
                 return response;
             });
@@ -2896,7 +2896,7 @@ app.service('RolesService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/roles/delete?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/roles/delete?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2910,7 +2910,7 @@ app.service('RolesService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/roles/insertar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/roles/insertar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2924,7 +2924,7 @@ app.service('RolesService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/roles/modificar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/roles/modificar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -2932,7 +2932,7 @@ app.service('RolesService', function($http) {
     }
 
     this.eliminarById = function(datos){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/roles/eliminar-id/'+datos)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/roles/eliminar-id/'+datos)
             .then(function (response) {
                 return response;
             });
@@ -3517,7 +3517,7 @@ app.service('UsuariosService', function($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.listarJson = function(json) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuarios/complex/'+json)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuarios/complex/'+json)
             .then(function (response) {
                 return response;
             });
@@ -3525,7 +3525,7 @@ app.service('UsuariosService', function($http) {
     }
 
     this.eliminar = function(id){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuarios/delete/'+id)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuarios/delete/'+id)
             .then(function (response) {
                 return response;
             });
@@ -3533,7 +3533,7 @@ app.service('UsuariosService', function($http) {
     }
 
     this.eliminarById = function(codigo){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuarios/eliminar/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuarios/eliminar/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -3550,7 +3550,7 @@ app.service('UsuariosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/personas/usuarios/insertar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/personas/usuarios/insertar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3559,8 +3559,8 @@ app.service('UsuariosService', function($http) {
 
     this.listarComplex = function(json) {
         /*lista los usuario_sucursal
-         var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuarios/complex/'+json)*/
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuarios/complex/'+json)
+         var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuarios/complex/'+json)*/
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuarios/complex/'+json)
             .then(function (response) {
                 return response;
             });
@@ -3568,7 +3568,7 @@ app.service('UsuariosService', function($http) {
     }
 
     this.listarUsuarioSucursal = function() {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuario-sucursal/')
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuario-sucursal/')
             .then(function (response) {
                 return response;
             });
@@ -3579,7 +3579,7 @@ app.service('UsuariosService', function($http) {
         var obj = {  "codigo": datos.codigo                     }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuarios/listarCodigo/'+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuarios/listarCodigo/'+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3594,7 +3594,7 @@ app.service('UsuariosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/personas/usuarios/modificar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/personas/usuarios/modificar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3608,7 +3608,7 @@ app.service('UsuariosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/personas/usuarios/cambiar-password?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/personas/usuarios/cambiar-password?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3779,7 +3779,7 @@ app.service('InventarioService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/inventario/registro-inventario/insertar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/inventario/registro-inventario/insertar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3793,7 +3793,7 @@ app.service('InventarioService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/roles/modificar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/roles/modificar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3803,7 +3803,7 @@ app.service('InventarioService', function($http) {
     this.listarInventario = function(json) {
         var jsonObj = angular.toJson(json);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/inventario/listar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/inventario/listar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3814,7 +3814,7 @@ app.service('InventarioService', function($http) {
     this.registrarAjuste = function(obj){
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/inventario/registrar-ajuste?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/inventario/registrar-ajuste?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3878,7 +3878,7 @@ app.service('UtilService', function($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.secuencia = function(secuencia) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/util/secuencia/'+secuencia)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/util/secuencia/'+secuencia)
             .then(function (response) {
                 return response;
             });
@@ -3886,7 +3886,7 @@ app.service('UtilService', function($http) {
     }
 
     this.hechauka = function(archivo,tipo) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/util/descargar-archivo/'+archivo+'/'+tipo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/util/descargar-archivo/'+archivo+'/'+tipo)
             .then(function (response) {
                 return response;
             });
@@ -3901,7 +3901,7 @@ app.service('ComprasService', function($http) {
     this.insertar = function(obj) {
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/compras/insertar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/compras/insertar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3912,7 +3912,7 @@ app.service('ComprasService', function($http) {
     this.listarJson = function(datos) {
         var json = angular.toJson(datos);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/compras/listar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/compras/listar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3920,7 +3920,7 @@ app.service('ComprasService', function($http) {
     }
 
     this.listarDetalle = function(codigo) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/compras/listar-detalle/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/compras/listar-detalle/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -3928,7 +3928,7 @@ app.service('ComprasService', function($http) {
     }
 
     this.listarDetalleRegistro = function(codigo) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/compras/listar-detalle-registro/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/compras/listar-detalle-registro/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -3943,7 +3943,7 @@ app.service('ComprasService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/compras/anular?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/compras/anular?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3953,7 +3953,7 @@ app.service('ComprasService', function($http) {
     this.insertarRegistroCompra = function(listaParam){
         var json = angular.toJson(listaParam);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/compras/registro-compra/insertar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/compras/registro-compra/insertar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3963,7 +3963,7 @@ app.service('ComprasService', function($http) {
     this.registrarNotaDebito = function(obj) {
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/compras/registrarn-nota-debito?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/compras/registrarn-nota-debito?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -3971,7 +3971,7 @@ app.service('ComprasService', function($http) {
     }
 
     this.listarNC = function(codigo) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/compras/listar-nota-credito/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/compras/listar-nota-credito/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -3985,7 +3985,7 @@ app.service('ComprasService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/compras/anular-nc?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/compras/anular-nc?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -4573,7 +4573,7 @@ app.service('CajasService', function($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.eliminar = function(codigo){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/cajas/delete/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/cajas/delete/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -4589,7 +4589,7 @@ app.service('CajasService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/cajas/listar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/cajas/listar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -4599,7 +4599,7 @@ app.service('CajasService', function($http) {
     this.insertar = function(datos){
         var json = angular.toJson(datos);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/cajas/insertar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/cajas/insertar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -4607,7 +4607,7 @@ app.service('CajasService', function($http) {
     }
 
     this.obtenerSucursalTimbrado = function(usuario){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/cajas/sucursal-timbrado?paramJson='+usuario)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/cajas/sucursal-timbrado?paramJson='+usuario)
             .then(function (response) {
                 return response;
             });
@@ -4624,7 +4624,7 @@ app.service('CajasService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/ventas/cajas/modificar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/ventas/cajas/modificar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -4904,7 +4904,7 @@ app.service('VentasService', function($http) {
     this.listarStockPorSucursal = function(obj) {
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/ventas-stock-por-sucursal?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/ventas-stock-por-sucursal?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -4914,7 +4914,7 @@ app.service('VentasService', function($http) {
     this.registrarVenta = function(obj){
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/registrar-venta?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/registrar-venta?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -4922,7 +4922,7 @@ app.service('VentasService', function($http) {
     }
 
     this.listarJson = function(json) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/listar-venta?paramJson='+json)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/listar-venta?paramJson='+json)
             .then(function (response) {
                 return response;
             });
@@ -4930,7 +4930,7 @@ app.service('VentasService', function($http) {
     }
 
     this.eliminarVenta = function(id){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/delete/'+id)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/delete/'+id)
             .then(function (response) {
                 return response;
             });
@@ -4939,7 +4939,7 @@ app.service('VentasService', function($http) {
 
 
     this.listarDetalleFactura = function(id) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/listar-detalle-factura/'+id)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/listar-detalle-factura/'+id)
             .then(function (response) {
                 return response;
             });
@@ -4951,7 +4951,7 @@ app.service('VentasService', function($http) {
         console.log(obj);
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/facturar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/facturar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -4959,7 +4959,7 @@ app.service('VentasService', function($http) {
     }
 
     this.anularFactura = function(id){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/anular-factura/'+id)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/anular-factura/'+id)
             .then(function (response) {
                 return response;
             });
@@ -4969,7 +4969,7 @@ app.service('VentasService', function($http) {
     this.editarFactura = function(obj){
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/ventas/editar-factura?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/ventas/editar-factura?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -4978,7 +4978,7 @@ app.service('VentasService', function($http) {
 
     this.listarDetalleAprovadoReparacion = function(secuencia) {
 
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/listar-detalle-aprovado-reparacion/'+secuencia)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/listar-detalle-aprovado-reparacion/'+secuencia)
             .then(function (response) {
                 return response;
             });
@@ -4988,7 +4988,7 @@ app.service('VentasService', function($http) {
     this.registrarNotaCredito = function(param){
         var json = angular.toJson(param);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/registrar-nota-credito?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/registrar-nota-credito?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -4996,7 +4996,7 @@ app.service('VentasService', function($http) {
     }
 
     this.listarDetalleAprovadoReparacion = function(secuencia) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/listar-detalle-aprovado-reparacion/'+secuencia)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/listar-detalle-aprovado-reparacion/'+secuencia)
             .then(function (response) {
                 return response;
             });
@@ -5006,7 +5006,7 @@ app.service('VentasService', function($http) {
     this.listarFondoDebito = function(param) {
         var json = angular.toJson(param);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/listar-fondo-debito?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/listar-fondo-debito?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -5014,7 +5014,7 @@ app.service('VentasService', function($http) {
     }
 
     this.anularNotaCredito = function(id){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/anular-nota-credito/'+id)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/anular-nota-credito/'+id)
             .then(function (response) {
                 return response;
             });
@@ -5516,7 +5516,7 @@ app.service('PagosService', function($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.listarPorClientes = function(json) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/pagos/listar/clientes?paramJson='+json)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/pagos/listar/clientes?paramJson='+json)
             .then(function (response) {
                 return response;
             });
@@ -5525,7 +5525,7 @@ app.service('PagosService', function($http) {
 
 
     this.listarPorProveedores = function(json) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/pagos/listar/proveedores?paramJson='+json)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/pagos/listar/proveedores?paramJson='+json)
             .then(function (response) {
                 return response;
             });
@@ -5535,7 +5535,7 @@ app.service('PagosService', function($http) {
     this.generarCheque = function(obj, usuario) {
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/pagos/generar-cheque/'+usuario+'?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/pagos/generar-cheque/'+usuario+'?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -5545,7 +5545,7 @@ app.service('PagosService', function($http) {
     this.efectivizar = function(obj, usuario) {
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/pagos/efectivizar/'+usuario+'?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/pagos/efectivizar/'+usuario+'?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -5556,7 +5556,7 @@ app.service('PagosService', function($http) {
     this.pagar = function(datos) {
         var jsonObj = angular.toJson(datos);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/pagos/pagar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/pagos/pagar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -5564,7 +5564,7 @@ app.service('PagosService', function($http) {
     }
 
     this.anularPago = function(codigo) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/pagos/anular-pago/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/pagos/anular-pago/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -5768,7 +5768,7 @@ app.service('UsuarioSucursalService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuarios/usuario-sucursal?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuarios/usuario-sucursal?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -5778,7 +5778,7 @@ app.service('UsuarioSucursalService', function($http) {
     this.listar = function(datos) {
         var json = angular.toJson(datos);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuario-sucursal?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuario-sucursal?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -5786,7 +5786,7 @@ app.service('UsuarioSucursalService', function($http) {
     }
 
     this.eliminarById = function(usuario){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuario-sucursal/eliminar-id/'+usuario)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuario-sucursal/eliminar-id/'+usuario)
             .then(function (response) {
                 return response;
             });
@@ -5794,7 +5794,7 @@ app.service('UsuarioSucursalService', function($http) {
     }
 
     this.insertar = function(usuario, sucursal){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/usuario-sucursal/insertar/'+usuario+'/'+sucursal)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/usuario-sucursal/insertar/'+usuario+'/'+sucursal)
             .then(function (response) {
                 return response;
             });
@@ -5808,7 +5808,7 @@ app.service('UsuarioSucursalService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/personas/usuario-sucursal/modificar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/personas/usuario-sucursal/modificar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -6686,7 +6686,7 @@ app.service('CajasMovimientosService', function($http) {
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.eliminar = function(codigo){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/cajas-movimientos/delete/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/cajas-movimientos/delete/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -6696,7 +6696,7 @@ app.service('CajasMovimientosService', function($http) {
     this.listar = function(datos){
         var json = angular.toJson(datos);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/cajas-movimientos?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/cajas-movimientos?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -6706,7 +6706,7 @@ app.service('CajasMovimientosService', function($http) {
     this.insertar = function(datos){
         var json = angular.toJson(datos);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/ventas/cajas-movimientos?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/ventas/cajas-movimientos?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -7297,7 +7297,7 @@ app.service('TimbradosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/timbrados/listar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/timbrados/listar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -7313,7 +7313,7 @@ app.service('TimbradosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/timbrados/insertar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/timbrados/insertar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -7321,7 +7321,7 @@ app.service('TimbradosService', function($http) {
     }
 
     this.eliminarById = function(codigo){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/ventas/timbrados/eliminar-id/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/ventas/timbrados/eliminar-id/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -7337,7 +7337,7 @@ app.service('TimbradosService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/servicios/modificar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/servicios/modificar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -7609,7 +7609,7 @@ app.service('CuentasBancariasService', function($http) {
     this.listar = function(datos) {
         var jsonObj = angular.toJson(datos);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/cuentas-bancarias?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/cuentas-bancarias?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -7625,7 +7625,7 @@ app.service('CuentasBancariasService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/cuentas-bancarias/insertar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/cuentas-bancarias/insertar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -7643,7 +7643,7 @@ app.service('CuentasBancariasService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/catalogo/cuentas-bancarias/modificar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/catalogo/cuentas-bancarias/modificar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -7651,7 +7651,7 @@ app.service('CuentasBancariasService', function($http) {
     }
 
     this.eliminarById = function(codigo){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/catalogo/cuentas-bancarias/eliminar-id/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/catalogo/cuentas-bancarias/eliminar-id/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -8092,7 +8092,7 @@ app.service('PersonasService', function($http) {
     this.listarComplex = function(datos) {
         var jsonObj = angular.toJson(datos);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/personas/complex/' +encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/personas/complex/' +encoJson)
             .then(function (response) {
                 return response;
             });
@@ -8101,7 +8101,7 @@ app.service('PersonasService', function($http) {
     this.listar = function(datos) {
         var jsonObj = angular.toJson(datos);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/personas/listar/' +encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/personas/listar/' +encoJson)
             .then(function (response) {
                 return response;
             });
@@ -8130,7 +8130,7 @@ app.service('PersonasService', function($http) {
 
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/personas/personas/insertar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/personas/personas/insertar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -8138,7 +8138,7 @@ app.service('PersonasService', function($http) {
     }
 
     this.eliminarById = function(cedula){
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/personas/personas/eliminar-id/'+cedula)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/personas/personas/eliminar-id/'+cedula)
             .then(function (response) {
                 return response;
             });
@@ -8166,7 +8166,7 @@ app.service('PersonasService', function($http) {
         }
         var json = angular.toJson(obj);
         var encoJson = encodeURIComponent(json);
-        var myResponseData = $http.post('http://localhost:8080/panda-sys/webapi/personas/personas/modificar?paramJson='+encoJson)
+        var myResponseData = $http.post('http://localhost:8080/orca-sys/webapi/personas/personas/modificar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -8474,7 +8474,7 @@ app.controller('reporte', function($scope, $location, $rootScope, $cookies, $dia
     delete $http.defaults.headers.common['X-Requested-With'];
 
     this.listar = function(modulo) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/reportes/listar/' +modulo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/reportes/listar/' +modulo)
             .then(function (response) {
                 return response;
             });
@@ -9487,7 +9487,7 @@ app.service('CobrosService', function($http) {
     this.listarFondoCredito = function(datos) {
         var jsonObj = angular.toJson(datos);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/cobros/listar-fondo-credito?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/cobros/listar-fondo-credito?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -9497,7 +9497,7 @@ app.service('CobrosService', function($http) {
     this.cobrar = function(datos) {
         var jsonObj = angular.toJson(datos);
         var encoJson = encodeURIComponent(jsonObj);
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/cobros/cobrar?paramJson='+encoJson)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/cobros/cobrar?paramJson='+encoJson)
             .then(function (response) {
                 return response;
             });
@@ -9505,7 +9505,7 @@ app.service('CobrosService', function($http) {
     }
 
     this.listarReciboCabecera = function(codigo) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/cobros/listar-recibo-cabecera/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/cobros/listar-recibo-cabecera/'+codigo)
             .then(function (response) {
                 return response;
             });
@@ -9513,7 +9513,7 @@ app.service('CobrosService', function($http) {
     }
 
     this.anularCobro = function(codigo) {
-        var myResponseData = $http.get('http://localhost:8080/panda-sys/webapi/cobros/anular-cobro/'+codigo)
+        var myResponseData = $http.get('http://localhost:8080/orca-sys/webapi/cobros/anular-cobro/'+codigo)
             .then(function (response) {
                 return response;
             });
